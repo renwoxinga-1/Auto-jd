@@ -1,15 +1,12 @@
 /*
 此文件为Node.js专用。其他用户请忽略
  */
-//此处填写京东账号cookie。
-// let CookieJDs = [
-//   '',//账号一ck,例:pt_key=XXX;pt_pin=XXX;
-//   '',//账号二ck,例:pt_key=XXX;pt_pin=XXX;如有更多,依次类推
-// ]
+// 此处填写京东账号cookie。
 let CookieJDs = [
-  'pt_key=AAJihghPADBUYjXvhfG9k8NWDkM1vVwcHUcYPXgjZf9pFP2Yc76iHi1YQJ8DrzGJzoILl-4-AuM;pt_pin=jd_71f788c3e3c11;'//账号一ck,例:pt_key=XXX;pt_pin=XXX;
- 
+  '',//账号一ck,例:pt_key=XXX;pt_pin=XXX;
+  '',//账号二ck,例:pt_key=XXX;pt_pin=XXX;如有更多,依次类推
 ]
+
 // 判断环境变量里面是否有京东ck
 if (process.env.JD_COOKIE) {
   if (process.env.JD_COOKIE.indexOf('&') > -1) {
